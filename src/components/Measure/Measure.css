@@ -1,9 +1,5 @@
-.Measure ul {
-  padding: 0;
-  margin: 0;
-  font-family: "Courier New", Courier, monospace;
-}
-
-.Measure ul li {
-  list-style: none;
+.Measure {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 30px;
 }

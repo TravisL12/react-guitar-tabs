@@ -1,6 +1,7 @@
 .App {
-  background-color: rgb(204, 226, 233);
+  background-color: #cce2e9;
   height: 100vh;
+  min-width: 1200px;
 }
 
 .AppContainer {

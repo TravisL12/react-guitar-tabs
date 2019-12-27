@@ -7,7 +7,11 @@ function App() {
     <div className="App">
       <div className="AppContainer">
         <header>Guitar Tabs Yo!</header>
-        <div className='body'><Measure /></div>
+        <div className='body'>
+          <Measure />
+          <Measure />
+          <Measure />
+        </div>
       </div>
     </div>
   );
