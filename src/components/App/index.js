@@ -4,7 +4,11 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <p>Hey there.</p>
+      <div className="AppContainer">
+        <header>Hey Header</header>
+        <div>Hey there.</div>
+        <footer>Hey footer</footer>
+      </div>
     </div>
   );
 }
