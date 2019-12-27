@@ -9,8 +9,8 @@ function App() {
         <header>Guitar Tabs Yo!</header>
         <div className='body'>
           <Measure />
-          <Measure />
-          <Measure />
+          <Measure chordCount={50} />
+          <Measure chordCount={25} />
         </div>
       </div>
     </div>

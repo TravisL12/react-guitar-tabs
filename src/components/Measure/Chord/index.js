@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Chord.css";
+import Notes from "../../../Models/notes";
 
-function Chord({ isStaff, notes }) {
+function Chord({ isStaff, notes: notesProp }) {
+  const [notes, setNotes] = useState(notesProp);
+
   return (
     <div className="Chord">
       {isStaff ? <ul>
@@ -13,12 +16,12 @@ function Chord({ isStaff, notes }) {
         <li>E |</li>
       </ul> :
         <ul>
-          <li>{notes.highE ? notes.highE : '-'}</li>
-          <li>{notes.b ? notes.b : '-'}</li>
-          <li>{notes.g ? notes.g : '-'}</li>
-          <li>{notes.d ? notes.d : '-'}</li>
-          <li>{notes.a ? notes.a : '-'}</li>
-          <li>{notes.lowE ? notes.lowE : '-'}</li>
+          <li>{notes.highE}</li>
+          <li>{notes.b}</li>
+          <li>{notes.g}</li>
+          <li>{notes.d}</li>
+          <li>{notes.a}</li>
+          <li>{notes.lowE}</li>
         </ul>
       }
     </div>
@@ -26,7 +29,7 @@ function Chord({ isStaff, notes }) {
 }
 
 Chord.defaultProps = {
-  notes: {}
+  notes: new Notes(),
 }
 
 export default Chord;

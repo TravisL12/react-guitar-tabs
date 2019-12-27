@@ -1,5 +1,5 @@
 .App {
-  background-color: #cce2e9;
+  background-color: #d8e5e9;
   height: 100vh;
   min-width: 1200px;
 }
@@ -16,7 +16,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: lightcoral;
+  background-color: rgb(173, 230, 227);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .AppContainer .body {

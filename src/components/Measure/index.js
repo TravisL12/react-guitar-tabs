@@ -4,10 +4,10 @@ import Chord from "./Chord";
 
 const CHORD_COUNT = 80;
 
-function Measure() {
+function Measure({ chordCount }) {
   // Quick way to create an array of N items
   // https://stackoverflow.com/a/38213213
-  const chords = Array.from({ length: CHORD_COUNT }, (v, k) => <Chord key={k + 1} />)
+  const chords = Array.from({ length: chordCount || CHORD_COUNT }, (v, k) => <Chord key={k + 1} />)
 
   return (
     <div className="Measure">
