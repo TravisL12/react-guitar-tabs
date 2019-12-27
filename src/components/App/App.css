@@ -1,9 +1,23 @@
 .App {
-  background-color: lightblue;
+  background-color: rgb(204, 226, 233);
   height: 100vh;
 }
 
 .AppContainer {
+  display: grid;
+  grid-template-rows: 100px auto;
   width: 1200px;
+  height: 100%;
   margin: 0 auto;
+}
+
+.AppContainer header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightcoral;
+}
+
+.AppContainer .body {
+  padding: 10px 0;
 }

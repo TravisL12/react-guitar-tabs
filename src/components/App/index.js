@@ -1,13 +1,13 @@
 import React from "react";
 import "./App.css";
+import Measure from "../Measure";
 
 function App() {
   return (
     <div className="App">
       <div className="AppContainer">
-        <header>Hey Header</header>
-        <div>Hey there.</div>
-        <footer>Hey footer</footer>
+        <header>Guitar Tabs Yo!</header>
+        <div className='body'><Measure /></div>
       </div>
     </div>
   );
