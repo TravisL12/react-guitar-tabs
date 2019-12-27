@@ -2,6 +2,7 @@
   "name": "react-guitar-tabs",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://travisl12.github.io/react-guitar-tabs",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
@@ -30,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
