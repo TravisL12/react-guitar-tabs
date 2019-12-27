@@ -7,7 +7,7 @@
 .AppContainer {
   display: grid;
   grid-template-rows: 100px auto;
-  width: 1200px;
+  width: 1400px;
   height: 100%;
   margin: 0 auto;
 }
@@ -23,4 +23,6 @@
 
 .AppContainer .body {
   padding: 10px 0;
+  width: 100%;
+  overflow-x: auto;
 }

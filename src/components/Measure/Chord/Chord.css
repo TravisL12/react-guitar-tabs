@@ -2,3 +2,14 @@
   font-family: "Courier New", Courier, monospace;
   padding: 0 2px;
 }
+
+.Chord li {
+  cursor: pointer;
+  letter-spacing: -1px;
+  width: 18px;
+  text-align: center;
+}
+
+.Chord li:hover {
+  background-color: #e28f8f;
+}

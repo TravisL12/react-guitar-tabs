@@ -8,20 +8,20 @@ function Chord({ isStaff, notes: notesProp }) {
   return (
     <div className="Chord">
       {isStaff ? <ul>
-        <li>e |</li>
-        <li>b |</li>
-        <li>g |</li>
-        <li>d |</li>
-        <li>a |</li>
-        <li>E |</li>
+        <li>e|</li>
+        <li>b|</li>
+        <li>g|</li>
+        <li>d|</li>
+        <li>a|</li>
+        <li>E|</li>
       </ul> :
         <ul>
-          <li>{notes.highE}</li>
-          <li>{notes.b}</li>
-          <li>{notes.g}</li>
-          <li>{notes.d}</li>
-          <li>{notes.a}</li>
-          <li>{notes.lowE}</li>
+          <li>{notes.display.highE}</li>
+          <li>{notes.display.b}</li>
+          <li>{notes.display.g}</li>
+          <li>{notes.display.d}</li>
+          <li>{notes.display.a}</li>
+          <li>{notes.display.lowE}</li>
         </ul>
       }
     </div>
