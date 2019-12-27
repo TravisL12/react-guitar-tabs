@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Chord.css";
-import Notes from "../../../Models/notes";
+import ChordModel from "../../../Models/chord";
 
 function Chord({ isStaff, isEnd, notes: notesProp }) {
   const [notes, setNotes] = useState(notesProp);
@@ -29,7 +29,7 @@ function Chord({ isStaff, isEnd, notes: notesProp }) {
 }
 
 Chord.defaultProps = {
-  notes: new Notes(),
+  notes: new ChordModel(),
 }
 
 export default Chord;

@@ -14,7 +14,7 @@ const GUITAR_STRINGS = isNotes => ({
     lowE: isNotes && DASH
 });
 
-class Notes {
+class ChordModel {
     constructor() {
         this.notes = GUITAR_STRINGS(true);
         this.pulloffs = GUITAR_STRINGS();
@@ -50,4 +50,4 @@ class Notes {
     });
 }
 
-export default Notes;
+export default ChordModel;
