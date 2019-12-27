@@ -2,7 +2,7 @@ import React from "react";
 import "./Measure.css";
 import Chord from "./Chord";
 
-const CHORD_COUNT = 60;
+const CHORD_COUNT = 80;
 
 function Measure({ chordCount }) {
   // Quick way to create an array of N items
@@ -13,6 +13,7 @@ function Measure({ chordCount }) {
     <div className="Measure">
       <Chord isStaff={true} />
       {chords}
+      <Chord isEnd={true} />
     </div>
   );
 }

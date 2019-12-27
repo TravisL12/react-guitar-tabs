@@ -5,11 +5,14 @@
 
 .Chord li {
   cursor: pointer;
-  letter-spacing: -1px;
-  width: 18px;
   text-align: center;
 }
 
 .Chord li:hover {
   background-color: #e28f8f;
+}
+
+.Chord .staff li:hover {
+  cursor: unset;
+  background-color: unset;
 }
