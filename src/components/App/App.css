@@ -1,15 +1,15 @@
 .App {
   background-color: #d8e5e9;
   height: 100vh;
-  min-width: 1200px;
+  display: grid;
+  grid-template-columns: 125px auto 125px;
 }
 
 .AppContainer {
   display: grid;
   grid-template-rows: 100px auto;
-  width: 1400px;
+  grid-column: 2/3;
   height: 100%;
-  margin: 0 auto;
 }
 
 .AppContainer header {
@@ -17,12 +17,10 @@
   align-items: center;
   justify-content: center;
   background-color: rgb(173, 230, 227);
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
 }
 
 .AppContainer .body {
   padding: 10px 0;
-  width: 100%;
+  margin-left: 20px;
   overflow-x: auto;
 }

@@ -7,10 +7,8 @@ function App() {
     <div className="App">
       <div className="AppContainer">
         <header>Guitar Tabs Yo!</header>
-        <div className='body'>
+        <div className="body">
           <Measure />
-          <Measure chordCount={50} />
-          <Measure chordCount={25} />
         </div>
       </div>
     </div>

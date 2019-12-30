@@ -12,7 +12,7 @@ function ChordInput({ setNotes }) {
 
     const noteObj = new ChordModel();
     if (chordLibrary[value]) {
-      noteObj.setNotes(chordLibrary[value]);
+      noteObj.setNotes(chordLibrary[value].notes);
     }
     setNotes(noteObj);
 
@@ -31,8 +31,8 @@ function ChordInput({ setNotes }) {
           autoFocus
         />
       ) : (
-          <span onClick={() => setShowInput(true)}>{chordValue}</span>
-        )}
+        <span onClick={() => setShowInput(true)}>{chordValue}</span>
+      )}
     </li>
   );
 }
@@ -57,8 +57,8 @@ function NoteInput({ value }) {
           autoFocus
         />
       ) : (
-          <span onClick={() => setShowInput(true)}>{noteValue}</span>
-        )}
+        <span onClick={() => setShowInput(true)}>{noteValue}</span>
+      )}
     </li>
   );
 }
@@ -79,16 +79,16 @@ function Chord({ isStaff, isEnd, notes: notesProp }) {
           <li>{isStaff && "E"}|</li>
         </ul>
       ) : (
-          <ul>
-            <ChordInput setNotes={setNotes} />
-            <NoteInput value={notes.display.highE} />
-            <NoteInput value={notes.display.b} />
-            <NoteInput value={notes.display.g} />
-            <NoteInput value={notes.display.d} />
-            <NoteInput value={notes.display.a} />
-            <NoteInput value={notes.display.lowE} />
-          </ul>
-        )}
+        <ul>
+          <ChordInput setNotes={setNotes} />
+          <NoteInput value={notes.display.highE} />
+          <NoteInput value={notes.display.b} />
+          <NoteInput value={notes.display.g} />
+          <NoteInput value={notes.display.d} />
+          <NoteInput value={notes.display.a} />
+          <NoteInput value={notes.display.lowE} />
+        </ul>
+      )}
     </div>
   );
 }
