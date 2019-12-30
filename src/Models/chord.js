@@ -1,4 +1,4 @@
-const DASH = "-";
+export const DASH = "-";
 const PULL_OFFS = "p";
 const HAMMER_ONS = "h";
 const SLIDES = "s";
@@ -17,24 +17,30 @@ const GUITAR_STRINGS = isNotes => ({
 class ChordModel {
     constructor() {
         this.notes = GUITAR_STRINGS(true);
-        this.pulloffs = GUITAR_STRINGS();
-        this.hammerons = GUITAR_STRINGS();
-        this.slides = GUITAR_STRINGS();
-        this.bends = GUITAR_STRINGS();
-        this.display = this.print();
+        this.modifiers = GUITAR_STRINGS();
+        this.updateDisplay();
     }
 
+    updateDisplay = () => {
+        this.display = this.print();
+    };
+
+    setNotes = (notes) => {
+        const { highE, b, g, d, a, lowE } = notes;
+
+        this.notes.highE = highE;
+        this.notes.b = b;
+        this.notes.g = g;
+        this.notes.d = d;
+        this.notes.a = a;
+        this.notes.lowE = lowE;
+        this.updateDisplay();
+    };
     /**
      * Join values of guitar string for display as a js string
      */
     concatString = guitarString => {
-        return [
-            this.notes[guitarString],
-            this.pulloffs[guitarString],
-            this.hammerons[guitarString],
-            this.slides[guitarString],
-            this.bends[guitarString]
-        ].join("");
+        return [this.notes[guitarString], this.modifiers[guitarString]].join("");
     };
 
     /**
