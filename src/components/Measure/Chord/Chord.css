@@ -1,18 +1,29 @@
 .Chord ul {
   font-family: "Courier New", Courier, monospace;
+}
+
+.Chord .noteInput {
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+  width: 10px;
+  height: 18px;
   padding: 0 2px;
 }
 
-.Chord li {
-  cursor: pointer;
-  text-align: center;
+.Chord .noteInput input {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 14px;
+  margin: 0;
+  border: none;
 }
 
-.Chord li:hover {
+.Chord .noteInput input:focus {
+  outline-width: 1px;
+}
+
+.Chord .noteInput span:hover {
   background-color: #e28f8f;
-}
-
-.Chord .staff li:hover {
-  cursor: unset;
-  background-color: unset;
 }
