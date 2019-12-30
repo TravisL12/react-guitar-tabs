@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Chord.css";
+import "./Chord.scss";
 import ChordModel from "../../../Models/chord";
 import NoteInput from "./NoteInput";
 import ChordInput from "./ChordInput";

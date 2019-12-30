@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Measure.css";
+import "./Measure.scss";
 import Chord from "./Chord";
 
 const CHORD_COUNT = 80;

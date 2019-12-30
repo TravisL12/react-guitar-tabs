@@ -10,17 +10,17 @@
   grid-template-rows: 100px auto;
   grid-column: 2/3;
   height: 100%;
-}
 
-.AppContainer header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(173, 230, 227);
-}
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(173, 230, 227);
+  }
 
-.AppContainer .body {
-  padding: 10px 0;
-  margin-left: 20px;
-  overflow-x: auto;
+  .body {
+    padding: 10px 0;
+    margin-left: 20px;
+    overflow-x: auto;
+  }
 }
