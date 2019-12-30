@@ -3,7 +3,7 @@ import "./Chord.css";
 import ChordModel, { DASH } from "../../../Models/chord";
 import chordLibrary from "../../../chordLibrary";
 
-function ChordSelector({ setNotes }) {
+function ChordInput({ setNotes }) {
   const [showInput, setShowInput] = useState(false);
   const [chordValue, setChordValue] = useState("");
 
@@ -42,8 +42,6 @@ function NoteInput({ value }) {
   const [noteValue, setNoteValue] = useState(value);
 
   useEffect(() => {
-    console.log("running");
-
     setNoteValue(value);
   }, [value]);
 
@@ -82,7 +80,7 @@ function Chord({ isStaff, isEnd, notes: notesProp }) {
         </ul>
       ) : (
           <ul>
-            <ChordSelector setNotes={setNotes} />
+            <ChordInput setNotes={setNotes} />
             <NoteInput value={notes.display.highE} />
             <NoteInput value={notes.display.b} />
             <NoteInput value={notes.display.g} />
