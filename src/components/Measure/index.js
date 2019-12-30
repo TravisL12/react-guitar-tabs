@@ -15,9 +15,25 @@ function Measure({ chordCount: chordCountProp }) {
 
   return (
     <div className="Measure">
-      <Chord isStaff={true} />
+      <ul>
+        <li>Ch</li>
+        <li>e|</li>
+        <li>B|</li>
+        <li>G|</li>
+        <li>D|</li>
+        <li>A|</li>
+        <li>E|</li>
+      </ul>
       {chords}
-      <Chord isEnd={true} />
+      <ul>
+        <li>&nbsp;</li>
+        <li>|</li>
+        <li>|</li>
+        <li>|</li>
+        <li>|</li>
+        <li>|</li>
+        <li>|</li>
+      </ul>
     </div>
   );
 }
