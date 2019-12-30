@@ -16,6 +16,10 @@
   flex: 1;
 }
 
+.Chord .noteInput span:hover {
+  background-color: #e28f8f;
+}
+
 .Chord .noteInput input {
   position: absolute;
   left: 0;
@@ -27,8 +31,4 @@
 
 .Chord .noteInput input:focus {
   outline-width: 1px;
-}
-
-.Chord .noteInput span:hover {
-  background-color: #e28f8f;
 }
