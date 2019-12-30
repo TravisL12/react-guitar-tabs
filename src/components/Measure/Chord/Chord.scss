@@ -1,5 +1,7 @@
+@import "../../../index.scss";
+
 .Chord {
-  font-family: "Courier New", Courier, monospace;
+  font-family: $tab-font-family;
 }
 
 .Chord .noteInput {
