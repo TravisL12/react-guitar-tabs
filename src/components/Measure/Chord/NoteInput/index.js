@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 import { DASH } from "../../../../Models/chord";
 
-function NoteInput({ value }) {
-  const [showInput, setShowInput] = useState(false);
-  const [noteValue, setNoteValue] = useState(value);
+function NoteInput({ name, notes, isActive }) {
+  const [showInput, setShowInput] = useState(isActive);
+  const [noteValue, setNoteValue] = useState(notes[name]);
 
   useEffect(() => {
-    setNoteValue(value);
-  }, [value]);
+    setNoteValue(notes[name]);
+  }, [notes, name]);
 
   return (
     <li className="noteInput">
@@ -26,5 +26,9 @@ function NoteInput({ value }) {
     </li>
   );
 }
+
+NoteInput.defaultProps = {
+  isActive: false
+};
 
 export default NoteInput;

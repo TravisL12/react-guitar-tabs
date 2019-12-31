@@ -10,12 +10,12 @@ function Chord({ notes: notesProp }) {
   return (
     <ul className="Chord">
       <ChordInput setNotes={setNotes} />
-      <NoteInput value={notes.display.highE} />
-      <NoteInput value={notes.display.b} />
-      <NoteInput value={notes.display.g} />
-      <NoteInput value={notes.display.d} />
-      <NoteInput value={notes.display.a} />
-      <NoteInput value={notes.display.lowE} />
+      <NoteInput name={"highE"} notes={notes.display} isActive={false} />
+      <NoteInput name={"b"} notes={notes.display} isActive={false} />
+      <NoteInput name={"g"} notes={notes.display} isActive={false} />
+      <NoteInput name={"d"} notes={notes.display} isActive={false} />
+      <NoteInput name={"a"} notes={notes.display} isActive={false} />
+      <NoteInput name={"lowE"} notes={notes.display} isActive={false} />
     </ul>
   );
 }

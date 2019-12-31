@@ -10,12 +10,15 @@ function ChordInput({ setNotes }) {
     const { value } = event.target;
 
     const noteObj = new ChordModel();
-    if (chordLibrary[value]) {
-      noteObj.setNotes(chordLibrary[value].notes);
+    const matchChord = chordLibrary[value.toLowerCase()];
+    if (matchChord) {
+      noteObj.setNotes(matchChord.notes);
+      setChordValue(matchChord.name);
+    } else {
+      setChordValue(value);
     }
 
     setNotes(noteObj);
-    setChordValue(event.target.value);
   };
 
   return (

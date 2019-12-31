@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import "./Measure.scss";
 import Chord from "./Chord";
 
@@ -9,9 +9,10 @@ function Measure({ chordCount: chordCountProp }) {
 
   // Quick way to create an array of N items
   // https://stackoverflow.com/a/38213213
-  const chords = Array.from({ length: chordCount }, (v, k) => (
-    <Chord key={k + 1} />
-  ));
+  const chords = useMemo(
+    () => Array.from({ length: chordCount }, (v, k) => <Chord key={k + 1} />),
+    [chordCount]
+  );
 
   return (
     <div className="Measure">
