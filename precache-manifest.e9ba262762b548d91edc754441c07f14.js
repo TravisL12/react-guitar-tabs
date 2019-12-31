@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "eb79a2b3ee7017a6d8160498e87be05a",
+    "revision": "22dacfa97e5ea765c5726876986bd461",
     "url": "/react-guitar-tabs/index.html"
   },
   {
-    "revision": "9989b7464dc760b2932e",
-    "url": "/react-guitar-tabs/static/css/main.7f3a1cfd.chunk.css"
+    "revision": "7ab5edd1adf02f03abc9",
+    "url": "/react-guitar-tabs/static/css/main.468dc6c3.chunk.css"
   },
   {
     "revision": "37023c97379accd2af98",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-guitar-tabs/static/js/2.c2b8a30c.chunk.js.LICENSE"
   },
   {
-    "revision": "9989b7464dc760b2932e",
-    "url": "/react-guitar-tabs/static/js/main.99d2d4b0.chunk.js"
+    "revision": "7ab5edd1adf02f03abc9",
+    "url": "/react-guitar-tabs/static/js/main.ba8e4864.chunk.js"
   },
   {
     "revision": "ed28d64c3d3103dd6d74",

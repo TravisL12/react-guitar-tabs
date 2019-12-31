@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-guitar-tabs/precache-manifest.2d7705834aa077d339d39dbe1f583681.js"
+  "/react-guitar-tabs/precache-manifest.e9ba262762b548d91edc754441c07f14.js"
 );
 
 self.addEventListener('message', (event) => {

@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-guitar-tabs/static/css/main.7f3a1cfd.chunk.css",
-    "main.js": "/react-guitar-tabs/static/js/main.99d2d4b0.chunk.js",
-    "main.js.map": "/react-guitar-tabs/static/js/main.99d2d4b0.chunk.js.map",
+    "main.css": "/react-guitar-tabs/static/css/main.468dc6c3.chunk.css",
+    "main.js": "/react-guitar-tabs/static/js/main.ba8e4864.chunk.js",
+    "main.js.map": "/react-guitar-tabs/static/js/main.ba8e4864.chunk.js.map",
     "runtime-main.js": "/react-guitar-tabs/static/js/runtime-main.f2da8abb.js",
     "runtime-main.js.map": "/react-guitar-tabs/static/js/runtime-main.f2da8abb.js.map",
     "static/js/2.c2b8a30c.chunk.js": "/react-guitar-tabs/static/js/2.c2b8a30c.chunk.js",
     "static/js/2.c2b8a30c.chunk.js.map": "/react-guitar-tabs/static/js/2.c2b8a30c.chunk.js.map",
     "index.html": "/react-guitar-tabs/index.html",
-    "precache-manifest.2d7705834aa077d339d39dbe1f583681.js": "/react-guitar-tabs/precache-manifest.2d7705834aa077d339d39dbe1f583681.js",
+    "precache-manifest.e9ba262762b548d91edc754441c07f14.js": "/react-guitar-tabs/precache-manifest.e9ba262762b548d91edc754441c07f14.js",
     "service-worker.js": "/react-guitar-tabs/service-worker.js",
-    "static/css/main.7f3a1cfd.chunk.css.map": "/react-guitar-tabs/static/css/main.7f3a1cfd.chunk.css.map",
+    "static/css/main.468dc6c3.chunk.css.map": "/react-guitar-tabs/static/css/main.468dc6c3.chunk.css.map",
     "static/js/2.c2b8a30c.chunk.js.LICENSE": "/react-guitar-tabs/static/js/2.c2b8a30c.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.f2da8abb.js",
     "static/js/2.c2b8a30c.chunk.js",
-    "static/css/main.7f3a1cfd.chunk.css",
-    "static/js/main.99d2d4b0.chunk.js"
+    "static/css/main.468dc6c3.chunk.css",
+    "static/js/main.ba8e4864.chunk.js"
   ]
 }
