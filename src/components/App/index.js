@@ -1,6 +1,6 @@
-import React from "react";
-import "./App.scss";
-import Measure from "../Measure";
+import React from 'react';
+import './App.scss';
+import Measure from '../Measure';
 
 function App() {
   return (

@@ -1,6 +1,6 @@
-import React, { useMemo, useState } from "react";
-import "./Measure.scss";
-import Chord from "./Chord";
+import React, { useMemo, useState } from 'react';
+import './Measure.scss';
+import Chord from './Chord';
 
 const CHORD_COUNT = 80;
 
